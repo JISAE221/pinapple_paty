@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:15-alpine
+    container_name: pineapple-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: sua_senha_foda
+      POSTGRES_DB: pineapple_party
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:

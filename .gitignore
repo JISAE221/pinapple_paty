@@ -1,0 +1,33 @@
+# --- RUST ---
+target/
+**/*.rs.bk
+*.exe
+*.pdb
+*.o
+*.obj
+
+# --- NODE / FRONTEND ---
+node_modules/
+dist/
+.env*
+npm-debug.log*
+
+# --- DOCKER ---
+.docker/
+# postgres_data/ (Caso ele estivesse dentro da pasta do projeto)
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+Thumbs.db
+.DS_Store
+
+# --- TEMP / LOGS ---
+logs/
+*.log
+tmp/

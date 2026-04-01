@@ -1,0 +1,85 @@
+// Use dbdiagram.io to visualize this!
+// Projeto: Pineapple Party (Ticketing Platform)
+
+Table usuarios {
+  id_usuario integer [primary key]
+  nome varchar
+  email varchar [unique]
+  senha varchar
+  cpf varchar [unique]
+  telefone varchar
+  data_nascimento date
+  genero varchar
+  foto_biometria text
+  created_at timestamp
+}
+
+Table eventos {
+  id_evento integer [primary key]
+  id_local integer
+  nome varchar
+  descricao text
+  data_evento date
+  hora_inicio time
+  status varchar
+}
+
+Table locais {
+  id_local integer [primary key]
+  nome varchar
+  endereco varchar
+  cidade varchar
+  capacidade_total integer
+}
+
+Table djs {
+  id_dj integer [primary key]
+  nome varchar
+  genero_musical varchar
+  status varchar
+}
+
+Table escalacao {
+  id_escalacao integer [primary key]
+  id_evento integer
+  id_dj integer
+  hora_entrada time
+  hora_saida time
+  palco varchar
+}
+
+Table pedidos {
+  id_pedido integer [primary key]
+  id_usuario integer
+  data_pedido timestamp
+  valor_total decimal
+  status_pagamento varchar
+}
+
+Table ingressos {
+  id_ingresso integer [primary key]
+  id_pedido integer
+  id_evento integer
+  tipo_ingresso varchar
+  preco_unitario decimal
+  qr_code_hash varchar
+  status_uso varchar
+}
+
+Table pagamentos {
+  id_pagamento integer [primary key]
+  id_pedido integer
+  metodo_pagamento varchar
+  transaction_id varchar
+  token_cartao varchar
+  nome_titular_cartao varchar
+}
+
+// Relacionamentos (Foreign Keys)
+Ref: eventos.id_local > locais.id_local
+Ref: escalacao.id_evento > eventos.id_evento
+Ref: escalacao.id_dj > djs.id_dj
+Ref: pedidos.id_usuario > usuarios.id_usuario
+Ref: ingressos.id_pedido > pedidos.id_pedido
+Ref: ingressos.id_evento > eventos.id_evento
+Ref: pagamentos.id_pedido - pedidos.id_pedido // 1 para 1
