@@ -1,11 +1,11 @@
-# Pineapple Party 🍍🕺
+# Pineapple 🍍
 
 [![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-Plataforma de gestão de eventos e venda de ingressos focada na cena eletrônica (Raves). Este projeto é um laboratório prático para estudos de **Engenharia de Software** e **Inteligência Artificial**.
+Plataforma de gestão de eventos e venda de ingressos focada na cena eletrônica (Raves), especificamente para a festa **Pineapple Party**. Este projeto é um laboratório prático para estudos de **Engenharia de Software** e **Inteligência Artificial**.
 
 ## 🚀 O Projeto
 
