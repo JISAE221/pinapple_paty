@@ -57,4 +57,4 @@ A modelagem de dados foi pensada para suportar grandes fluxos e análise de dado
 Este projeto faz parte de uma jornada de aprendizado contínuo. Você pode acompanhar as decisões de arquitetura e progresso no arquivo [context.md](file:///c:/Users/dania/OneDrive/Área de Trabalho/pineapple/context.md).
 
 ---
-Desenvolvido por **Daniboy** 🍍🦾
+Desenvolvido por **Daniel**
